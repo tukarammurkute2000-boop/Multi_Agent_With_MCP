@@ -1,0 +1,50 @@
+# ─── Core AI / Agents ────────────────────────────────────────
+anthropic>=0.40.0
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-anthropic>=0.3.0
+langchain-community>=0.3.0
+
+# ─── Vector DB & Embeddings ──────────────────────────────────
+pinecone-client>=3.0.0
+langchain-pinecone>=0.1.0
+sentence-transformers>=3.0.0
+
+# ─── Memory / Caching ────────────────────────────────────────
+redis>=5.0.0
+redis-py-lock>=0.4.0
+
+# ─── Graph (Intent Graph + Memory Graph) ─────────────────────
+networkx>=3.3
+
+# ─── HTTP / APIs ─────────────────────────────────────────────
+httpx>=0.27.0
+requests>=2.32.0
+aiohttp>=3.10.0
+
+# ─── Payment ─────────────────────────────────────────────────
+razorpay>=1.4.0
+
+# ─── MCP Server ──────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+
+# ─── Database ────────────────────────────────────────────────
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+aiosqlite>=0.20.0
+
+# ─── Utilities ───────────────────────────────────────────────
+python-dotenv>=1.0.0
+tenacity>=9.0.0          # retry logic
+structlog>=24.0.0         # structured logging
+python-jose>=3.3.0        # JWT for MCP auth
+passlib>=1.7.4
+
+# ─── Testing ─────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+pytest-mock>=3.12.0
+httpx                     # also used for async test client
